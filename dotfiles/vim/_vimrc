@@ -10,6 +10,8 @@ call plug#begin('~/.vim/plugged')
 
 " tender theme
 Plug 'jacoborus/tender'
+" nerd tree
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 
 call plug#end()
 
@@ -37,3 +39,7 @@ imap <down> <nop>
 imap <left> <nop>
 imap <right> <nop>
 
+" ================
+" startup stuff
+" ================
+autocmd VimEnter * NERDTree
