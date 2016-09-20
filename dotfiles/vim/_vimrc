@@ -2,6 +2,8 @@
 " general settings
 " =================
 set number
+set encoding=utf-8
+set fileencoding=utf-8
 
 " =================
 " vim-plug plugins
@@ -9,31 +11,32 @@ set number
 call plug#begin('~/.vim/plugged')
 
 " tender theme
-Plug 'jacoborus/tender'
+" Plug 'jacoborus/tender'
+Plug 'rakr/vim-one'
 " nerd tree
-Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'scrooloose/nerdtree'
 
 call plug#end()
 
 " =================
 " tender theme setup
 " =================
-
 if (has("termguicolors"))
   set termguicolors
 endif
 syntax enable
-colorscheme tender
+set background=dark
+colorscheme one 
 
 " =================
 " key mappings
 " =================
- 
 map <up> <nop>
 map <down> <nop>
 map <left> <nop>
 map <right> <nop>
 map ß $
+map <C-n> :NERDTreeToggle<CR>
 imap <up> <nop>
 imap <down> <nop>
 imap <left> <nop>
@@ -42,4 +45,4 @@ imap <right> <nop>
 " ================
 " startup stuff
 " ================
-autocmd VimEnter * NERDTree
+" autocmd VimEnter * NERDTree
