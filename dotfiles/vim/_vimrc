@@ -11,10 +11,12 @@ set fileencoding=utf-8
 call plug#begin('~/.vim/plugged')
 
 " tender theme
-" Plug 'jacoborus/tender'
-Plug 'rakr/vim-one'
+Plug 'jacoborus/tender'
+" Plug 'rakr/vim-one'
 " nerd tree
 Plug 'scrooloose/nerdtree'
+" lightline
+Plug 'itchyny/lightline.vim'
 
 call plug#end()
 
@@ -25,8 +27,9 @@ if (has("termguicolors"))
   set termguicolors
 endif
 syntax enable
-set background=dark
-colorscheme one 
+colorscheme tender 
+let g:lighline = { 'colorscheme': 'tender' }
+set laststatus=2
 
 " =================
 " key mappings
@@ -35,7 +38,7 @@ map <up> <nop>
 map <down> <nop>
 map <left> <nop>
 map <right> <nop>
-map ß $
+map ÃŸ $
 map <C-n> :NERDTreeToggle<CR>
 imap <up> <nop>
 imap <down> <nop>
