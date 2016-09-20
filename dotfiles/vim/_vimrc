@@ -1,0 +1,39 @@
+" =================
+" general settings
+" =================
+set number
+
+" =================
+" vim-plug plugins
+" =================
+call plug#begin('~/.vim/plugged')
+
+" tender theme
+Plug 'jacoborus/tender'
+
+call plug#end()
+
+" =================
+" tender theme setup
+" =================
+
+if (has("termguicolors"))
+  set termguicolors
+endif
+syntax enable
+colorscheme tender
+
+" =================
+" key mappings
+" =================
+ 
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
+map ß $
+imap <up> <nop>
+imap <down> <nop>
+imap <left> <nop>
+imap <right> <nop>
+
