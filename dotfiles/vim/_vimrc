@@ -18,6 +18,8 @@ Plug 'jacoborus/tender'
 Plug 'scrooloose/nerdtree'
 " lightline
 Plug 'itchyny/lightline.vim'
+"emmet.io
+Plug 'mattn/emmet-vim'
 
 call plug#end()
 
